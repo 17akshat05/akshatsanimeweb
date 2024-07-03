@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSHATSANIME</title>
+    <style>
+        /* Insert the CSS code here */
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #f5f5f5;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .search-bar, .filters, .latest-anime, .anime-list, .pagination {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar input, .filters select {
+            width: 20%;
+            padding: 10px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #e0e0e0;
+        }
+
+        .search-bar input::placeholder {
+            color: #999;
+        }
+
+        .filters select {
+            width: auto;
+        }
+
+        .latest-anime {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .latest-anime img {
+            width: 100px;
+            height: 150px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .latest-anime img:hover {
+            transform: scale(1.1);
+        }
+
+        .anime-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .anime-item {
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .anime-item:hover {
+            background-color: #3e3e3e;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pagination button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3f51b5;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pagination button:hover {
+            background-color: #5c6bc0;
+        }
+
+        .pagination button:disabled {
+            background-color: #9e9e9e;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AKSHATSANIME</h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for anime...">
+    </div>
+
+    <div class="filters">
+        <select>
+            <option value="">Filter by Year</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+        </select>
+        <select>
+            <option value="">Filter by Genre</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+        </select>
+        <select>
+            <option value="">Filter by Status</option>
+            <option value="ongoing">Ongoing</option>
+            <option value="completed">Completed</option>
+        </select>
+        <select>
+            <option value="">Sort by Popularity</option>
+            <option value="most-popular">Most Popular</option>
+            <option value="least-popular">Least Popular</option>
+        </select>
+    </div>
+
+    <div class="latest-anime">
+        <img src="https://via.placeholder.com/100x150" alt="Latest Anime 1">
+        <img src="https://via.placeholder.com/100x150" alt="Latest Anime 2">
+        <img src="https://via.placeholder.com/100x150" alt="Latest Anime 3">
+        <img src="https://via.placeholder.com/100x150" alt="Latest Anime 4">
+    </div>
+
+    <div class="anime-list">
+        <div class="anime-item">1. Anime Title 1</div>
+        <div class="anime-item">2. Anime Title 2</div>
+        <div class="anime-item">3. Anime Title 3</div>
+        <div class="anime-item">4. Anime Title 4</div>
+        <div class="anime-item">5. Anime Title 5</div>
+        <div class="anime-item">6. Anime Title 6</div>
+        <div class="anime-item">7. Anime Title 7</div>
+        <div class="anime-item">8. Anime Title 8</div>
+        <div class="anime-item">9. Anime Title 9</div>
+        <div class="anime-item">10. Anime Title 10</div>
+    </div>
+
+    <div class="pagination">
+        <button>Previous</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next</button>
+    </div>
+
+</body>
+</html>
